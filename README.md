@@ -9,7 +9,7 @@ A few of the outputs have been suppressed from the notebooks as they signigicant
 
 If you wish to recreate the results you simply need to download each of the JSON files and replace the directories I used for each of the Pandas Dataframes used to import the data into python.
 
-Finally, the following notebook was a significant help in terms of setting up the fine-tuning process of which the compute metrics and tokenize and align label functions have been completely ripped from: ___________________________________________-
+Finally, the following notebook was a significant help in terms of setting up the fine-tuning process of which the compute metrics and tokenize and align label functions have been completely ripped from:- https://github.com/huggingface/notebooks/blob/main/examples/token_classification.ipynb
 
 Overall my view on the model performance is that much work is still needed to be done to achieve the results I would desire. Much of these improvements were clearly laid out in my dissertation but have yet to be implemented. Performance across the models in the final implementation ended up being fairly similar with the highest performing model being BioBERT with an average F1-score across all entity groups of 0.678. The final implementation sought to avoid some of the likely overfitting that was occurring through the PBT algorithm so the highest peforming hyperparameters were taken and applied to a freshly generated train-test split of the dataset.
 
